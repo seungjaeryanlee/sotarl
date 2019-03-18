@@ -1,4 +1,12 @@
-from .env import env
+# All entries
+entries = [
+    {
+        "score": 1850.3,
+    },
+]
 
-
-from .entries import entries
+# Add ENV keys
+env = {
+    "env-title": "Alien",
+}
+entries = [{**entry, **env} for entry in entries]
