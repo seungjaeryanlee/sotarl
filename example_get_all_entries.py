@@ -1,4 +1,4 @@
-import db
+import sotarl
 
 
-print(db.get_all_entries())
+print(sotarl.get_all_entries())
