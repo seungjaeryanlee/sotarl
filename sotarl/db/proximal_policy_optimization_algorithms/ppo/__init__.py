@@ -1,8 +1,8 @@
 from .alien import entries as alien_entries
-
+from .amidar import entries as amidar_entries
 
 # Unite all entries
-entries = alien_entries
+entries = alien_entries + amidar_entries
 
 # Add ALGO keys
 algo = {
