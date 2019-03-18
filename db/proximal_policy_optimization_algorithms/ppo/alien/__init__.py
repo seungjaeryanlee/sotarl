@@ -1,9 +1,4 @@
-# All entries
-entries = [
-    {
-        "score": 1850.3,
-    },
-]
+from .variants import entries
 
 # Add ENV keys
 env = {
