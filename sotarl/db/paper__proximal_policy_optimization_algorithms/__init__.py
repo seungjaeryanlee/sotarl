@@ -1,3 +1,7 @@
+from .algo__ppo import entries as ppo_entries
+
+
+# Specify SOURCE
 source = {
     #  BASICS
     "source-title": "Proximal Policy Optimization Algorithm",
@@ -34,3 +38,7 @@ source = {
     bibsource = {dblp computer science bibliography, https://dblp.org}
 }""",
 }
+
+# Populate entries
+entries = ppo_entries
+entries = [{**entry, **source} for entry in entries]
