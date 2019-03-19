@@ -4,8 +4,8 @@ from .entries import entries
 # Specify ALGORITHM
 algo = {
     # ALGORITHM
-    "algo-title": "Proximal Policy Optimization",
-    "algo-nickname": "PPO",
+    "algo-title": "Advantage Actor Critic",
+    "algo-nickname": "A2C",
 
     # HYPERPARAMETERS
     "algo-frames": 40000000,
