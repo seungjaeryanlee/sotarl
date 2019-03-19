@@ -2,3 +2,5 @@ from .paper__proximal_policy_optimization_algorithms import entries as ppo_entri
 
 
 entries = ppo_entries
+
+assert len(entries) == 147

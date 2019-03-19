@@ -1,3 +1,5 @@
+from .algo__a2c import entries as a2c_entries
+from .algo__acer import entries as acer_entries
 from .algo__ppo import entries as ppo_entries
 
 
@@ -40,5 +42,7 @@ source = {
 }
 
 # Populate entries
-entries = ppo_entries
+entries = a2c_entries + acer_entries + ppo_entries
 entries = [{**entry, **source} for entry in entries]
+
+assert len(entries) == 49 * 3
