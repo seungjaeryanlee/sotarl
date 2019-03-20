@@ -54,12 +54,12 @@ from .algo__trpo_single_path import entries as trpo_single_path_entries
 from .algo__trpo_vine import entries as trpo_vine_entries
 
 entries = (
-    random_entries,
-    human_entries,
-    dqn2013_entries,
-    ucc_i_entries,
-    trpo_single_path_entries,
-    trpo_vine_entries,
+      random_entries
+    + human_entries
+    + dqn2013_entries
+    + ucc_i_entries
+    + trpo_single_path_entries
+    + trpo_vine_entries
 )
 entries = [{**entry, **source} for entry in entries]
 
