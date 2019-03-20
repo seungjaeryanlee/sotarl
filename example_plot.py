@@ -7,10 +7,14 @@ ENV_TITLE = 'atari-breakout'
 
 # Get relevant entries
 entries = rldb.get_all_entries()
-breakout_entries = [entry for entry in entries if entry['env-title'] == ENV_TITLE]
+breakout_entries = [e for e in entries if e['env-title'] == ENV_TITLE]
 
 # Sort entries by score, increasing
-breakout_entries = sorted(breakout_entries, key=lambda entry: entry['score'], reverse=True)
+breakout_entries = sorted(
+    breakout_entries,
+    key=lambda entry: entry['score'],
+    reverse=True
+)
 
 # Draw bar plot
 labels = [entry['algo-nickname'] for entry in breakout_entries]
