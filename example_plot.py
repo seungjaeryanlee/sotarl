@@ -22,4 +22,5 @@ scores = [entry['score'] for entry in breakout_entries]
 plt.barh(labels, scores)
 plt.title('Atari Breakout Scores')
 plt.tight_layout()
+plt.savefig('atari-breakout.png')
 plt.show()
