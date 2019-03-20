@@ -3,10 +3,7 @@ Database of state-of-the-art RL algorithms
 
 ## Examples
 
-<p>
-    <img style="width: 50%" src="/docs/atari-breakout.png" alt="Atari Breakout Scores">
-    <img style="width: 50%" src="/docs/atari-montezuma-revenge.png" alt="Atari Montezuma's Revenge Scores">
-</p>
+![Atari Breakout Scores](/docs/atari-breakout.png) ![Atari Montezuma's Revenge Scores](/docs/atari-montezuma-revenge.png)
 
 ## Papers
 
