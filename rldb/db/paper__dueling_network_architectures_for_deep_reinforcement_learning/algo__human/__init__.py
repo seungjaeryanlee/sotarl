@@ -4,8 +4,8 @@ from .entries import entries
 # Specify ALGORITHM
 algo = {
     # ALGORITHM
-    "algo-title": "Random",
-    "algo-nickname": "Random",
+    "algo-title": "Human",
+    "algo-nickname": "Human",
 
     # HYPERPARAMETERS
     # Not specified
