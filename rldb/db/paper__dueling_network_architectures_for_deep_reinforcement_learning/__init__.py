@@ -3,7 +3,7 @@ from .algo__dqn2015 import entries as dqn2015_entries
 from .algo__dueling import entries as dueling_entries
 from .algo__human import entries as human_entries
 from .algo__pdd import entries as pdd_entries
-from .algo__per import entries as per_entries
+from .algo__prioritized import entries as prioritized_entries
 from .algo__random import entries as random_entries
 
 
@@ -53,7 +53,7 @@ entries = (
     + dueling_entries
     + human_entries
     + pdd_entries
-    + per_entries
+    + prioritized_entries
     + random_entries
 )
 entries = [{**entry, **source} for entry in entries]
