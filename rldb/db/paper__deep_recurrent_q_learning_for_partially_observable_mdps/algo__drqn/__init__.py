@@ -8,9 +8,6 @@ algo = {
     "algo-nickname": "DRQN",
     "algo-source-title": "Deep Recurrent Q-Learning for Partially Observable MDPs",
 
-    # SCORE
-    "score-source-title": "Deep Recurrent Q-Learning for Partially Observable MDPs",
-
     # HYPERPARAMETERS
     "algo-frames": 0,  # TODO Unsure
 }
