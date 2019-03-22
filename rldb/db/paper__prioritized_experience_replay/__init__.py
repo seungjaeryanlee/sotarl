@@ -2,10 +2,10 @@ from .algo__ddqn import entries as ddqn_entries
 from .algo__dqn2015 import entries as dqn2015_entries
 from .algo__gorila import entries as gorila_entries
 from .algo__human import entries as human_entries
-from .algo__prop_prioritized_ddqn import entries as prop_pddqn_entries
+from .algo__prop_prioritized_ddqn_tuned import entries as prop_pddqn_tuned_entries
 from .algo__random import entries as random_entries
 from .algo__rank_prioritized import entries as rank_prioritized_entries
-from .algo__rank_prioritized_ddqn import entries as rank_pddqn_entries
+from .algo__rank_prioritized_ddqn_tuned import entries as rank_pddqn_tuned_entries
 
 
 # Specify SOURCE
@@ -51,10 +51,10 @@ entries = (
     + dqn2015_entries
     + gorila_entries
     + human_entries
-    + prop_pddqn_entries
+    + prop_pddqn_tuned_entries
     + random_entries
     + rank_prioritized_entries
-    + rank_pddqn_entries
+    + rank_pddqn_tuned_entries
 )
 entries = [{**entry, **source} for entry in entries]
 
