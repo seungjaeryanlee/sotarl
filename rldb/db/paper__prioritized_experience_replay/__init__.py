@@ -58,4 +58,5 @@ entries = (
 )
 entries = [{**entry, **source} for entry in entries]
 
-assert len(entries) == 57 * 8  # 57 games, 8 algorithms
+# Gorila and DQN2015 are tested only on 49 envs
+assert len(entries) == 57 * 6 + 49 * 2  # 57/49 games, 6/2 algorithms
