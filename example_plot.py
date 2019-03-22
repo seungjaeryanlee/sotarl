@@ -33,7 +33,7 @@ def remove_duplicates(entries):
             break
         next_entry = entries[i + 1]
 
-        if entry['algo-nickname'] == next_entry['algo-nickname'] and (not 'env-variant' in entry or not 'env-variant' in next_entry or entry['env-variant'] == next_entry['env-variant']):
+        if entry['algo-nickname'] == next_entry['algo-nickname'] and ('env-variant' in entry and 'env-variant' in next_entry and entry['env-variant'] == next_entry['env-variant']):
             if entry['score'] == next_entry['score']:
                 duplicate_indices.append(i + 1)
             else:
@@ -41,7 +41,7 @@ def remove_duplicates(entries):
                     entry['algo-nickname'],
                     entry['score'], next_entry['score'],
                     entry['source-nickname'], next_entry['source-nickname'],
-                    '{} ({})'.format(entry['algo-nickname'], entry['env-variant']) if 'env-variant' in entry else entry['algo-nickname'],
+                    '{} ({})'.format(entry['env-title'], entry['env-variant']) if 'env-variant' in entry else entry['env-title'],
                 ))
 
     deduped_entries = [entry for i, entry in enumerate(entries) if i not in duplicate_indices]
