@@ -1,4 +1,4 @@
-from .algo__ddqn_tuned import entries as ddqn_entries
+from .algo__ddqn_tuned import entries as ddqn_tuned_entries
 from .algo__dqn2015 import entries as dqn2015_entries
 from .algo__dueling import entries as dueling_entries
 from .algo__human import entries as human_entries
