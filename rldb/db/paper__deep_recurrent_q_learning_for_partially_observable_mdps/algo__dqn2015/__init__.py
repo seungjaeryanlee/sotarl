@@ -6,6 +6,10 @@ algo = {
     # ALGORITHM
     "algo-title": "Deep Q-Network",
     "algo-nickname": "DQN2015",
+    "algo-source-title": "Human-level Control through Deep Reinforcement Learning",
+
+    # SCORE
+    "score-source-title": "Human-level Control through Deep Reinforcement Learning",
 
     # HYPERPARAMETERS
     "algo-frames": 0,  # TODO Unsure
