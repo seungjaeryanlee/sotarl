@@ -47,7 +47,6 @@ source = {
 # Populate entries
 entries = (
     []
-    + ddqn_entries
     + dqn2015_entries
     + gorila_entries
     + human_entries
@@ -59,4 +58,4 @@ entries = (
 entries = [{**entry, **source} for entry in entries]
 
 # Gorila and DQN2015 are tested only on 49 envs
-assert len(entries) == 57 * 6 + 49 * 2  # 57/49 games, 6/2 algorithms
+assert len(entries) == 57 * 5 + 49 * 2  # 57/49 games, 5/2 algorithms
