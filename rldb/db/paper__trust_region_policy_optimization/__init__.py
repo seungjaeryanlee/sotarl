@@ -44,14 +44,6 @@ source = {
 }
 
 # Populate entries
-
-from .algo__random import entries as random_entries
-from .algo__human import entries as human_entries
-from .algo__dqn2013 import entries as dqn2013_entries
-from .algo__ucc_i import entries as ucc_i_entries
-from .algo__trpo_single_path import entries as trpo_single_path_entries
-from .algo__trpo_vine import entries as trpo_vine_entries
-
 entries = (
       random_entries
     + human_entries

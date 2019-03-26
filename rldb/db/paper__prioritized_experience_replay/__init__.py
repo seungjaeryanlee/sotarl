@@ -1,4 +1,3 @@
-from .algo__ddqn import entries as ddqn_entries
 from .algo__gorila import entries as gorila_entries
 from .algo__human import entries as human_entries
 from .algo__prop_prioritized_ddqn_tuned import entries as prop_pddqn_tuned_entries
