@@ -37,7 +37,6 @@ source = {
 # Populate entries
 entries = (
     []
-    + dqn2015_entries
     + dqn2015_ours_entries
     + drqn_entries
 )
