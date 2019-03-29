@@ -1,3 +1,12 @@
+"""
+DQN Ours scores from DRQN paper.
+
+    9 entries
+ + 10 flickering entries
+------------------------------------------------------------------------
+   19 unique entries
+
+"""
 from .entries import entries
 
 
