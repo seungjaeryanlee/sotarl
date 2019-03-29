@@ -1,6 +1,6 @@
-from .algo__dueling import entries as dueling_entries
+from .algo__dudqn import entries as dudqn_entries
 from .algo__human import entries as human_entries
-from .algo__pdd import entries as pdd_entries
+from .algo__pdd_dqn import entries as pdd_dqn_entries
 from .algo__random import entries as random_entries
 
 
@@ -45,9 +45,9 @@ source = {
 # Populate entries
 entries = (
     []
-    + dueling_entries
+    + dudqn_entries
     + human_entries
-    + pdd_entries
+    + pdd_dqn_entries
     + random_entries
 )
 entries = [{**entry, **source} for entry in entries]

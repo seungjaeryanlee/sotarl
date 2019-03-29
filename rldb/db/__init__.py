@@ -1,6 +1,6 @@
 from .paper__drqn import entries as drqn_entries
 from .paper__ddqn import entries as ddqn_entries
-from .paper__dueling_dqn import entries as dueling_entries
+from .paper__dudqn import entries as dudqn_entries
 from .paper__rnd import entries as rnd_entries
 from .paper__dqn2013 import entries as dqn2013_entries
 from .paper__dqn import entries as dqn_entries
@@ -13,7 +13,7 @@ entries = (
     []
     + drqn_entries
     + ddqn_entries
-    + dueling_entries
+    + dudqn_entries
     + rnd_entries
     + dqn2013_entries
     + dqn_entries
