@@ -179,8 +179,8 @@ def test_rainbow_paper_count():
     assert len(rainbow_entries) == (
         0
         + 16   # DQN
-        + 114  # Distributional DQN
-        + 114  # Rainbow
+        + 108  # Distributional DQN
+        + 108  # Rainbow
     )
 
 
