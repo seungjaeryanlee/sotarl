@@ -10,10 +10,10 @@ def test_ddqn_paper_count():
 
     assert len(ddqn_entries) == (
         0
-        + 57 * 2  # DDQN 
-        + 57 * 2  # DDQN (tuned)
-        + 8       # Human
-        + 8       # Random
+        + 57 + 49  # DDQN 
+        + 57       # DDQN (tuned)
+        + 8        # Human
+        + 8        # Random
     )
 
 
