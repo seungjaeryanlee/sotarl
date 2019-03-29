@@ -1,4 +1,4 @@
-human_entries = [
+entries = [
     {
         'env-title': 'atari-alien',
         'env-variant': 'Human start',
