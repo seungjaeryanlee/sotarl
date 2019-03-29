@@ -7,7 +7,7 @@ from .algo__rank_prioritized_ddqn_tuned import entries as rank_pddqn_tuned_entri
 source = {
     #  BASICS
     "source-title": "Prioritized Experience Replay",
-    "source-nickname": "PER",
+    "source-nickname": "Prioritized DQN",
     "source-authors": [
         "Tom Schaul",
         "John Quan",
