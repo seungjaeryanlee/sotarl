@@ -1,7 +1,7 @@
 
 
 from .algo__random import entries as random_entries
-from .algo__best_linear_learner_entries import entries as bll_entries
+from .algo__bll import entries as bll_entries
 from .algo__contingency import entries as contingency_entries
 from .algo__human import entries as human_entries
 from .algo__dqn2015 import entries as dqn2015_entries
@@ -10,7 +10,7 @@ from .algo__dqn2015 import entries as dqn2015_entries
 # Specify SOURCE
 source = {
     #  BASICS
-    "source-title": "Human-Level Control through Deep Reinforcement Learning",
+    "source-title": "Human-level Control through Deep Reinforcement Learning",
     "source-nickname": "DQN2015",
     "source-authors": [
         "Volodymyr Mnih",
