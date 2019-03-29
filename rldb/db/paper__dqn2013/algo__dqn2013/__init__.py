@@ -1,3 +1,11 @@
+"""
+DQN2013 scores from DQN2013 paper.
+
+ 7 entries
+------------------------------------------------------------------------
+ 7 unique entries
+
+"""
 from .entries import entries
 
 
