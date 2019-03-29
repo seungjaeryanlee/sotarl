@@ -15,4 +15,4 @@ algo = {
 # Populate entries
 entries = [{**entry, **algo} for entry in entries]
 
-assert len(entries) == 57 * 2  # 57 environments, 2 variants
+assert len(entries) == 57 + 8
