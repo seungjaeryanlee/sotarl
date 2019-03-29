@@ -1,8 +1,7 @@
 """
 Gorila DQN scores from Gorila DQN paper.
 
- 49 no-op entries
- 49 human entries
+ 98 entries
 ------------------------------------------------------------------------
  98 unique entries
 
@@ -15,7 +14,7 @@ algo = {
     # ALGORITHM
     "algo-title": "General Reinforcement Learning Architecture Deep Q-Network",
     "algo-nickname": "Gorila DQN",
-    "algo-source-title": "Massively Parallel Methods for Deep Reinforcement Learning",
+    "algo-source-title": "General Reinforcement Learning Architecture Deep Q-Network",
 
     # HYPERPARAMETERS
     "algo-frames": 0,  # TODO Unsure

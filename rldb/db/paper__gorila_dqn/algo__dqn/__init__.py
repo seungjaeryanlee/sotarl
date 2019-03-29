@@ -1,9 +1,10 @@
 """
 DQN scores from Gorila DQN paper.
 
- 49 entries
+   98 entries
+ - 49 no-op entries from DQN paper
 ------------------------------------------------------------------------
- 49 unique entries
+   49 unique entries
 
 """
 from .entries import entries

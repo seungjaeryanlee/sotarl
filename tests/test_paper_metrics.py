@@ -69,7 +69,13 @@ def test_gorila_dqn_paper_count():
         'source-title': 'Massively Parallel Methods for Deep Reinforcement Learning',
     })
 
-    assert len(gorila_dqn_entries) == 49 * 7
+    assert len(gorila_dqn_entries) == (
+        0
+        + 49  # DQN
+        + 98  # Gorila DQN
+        + 49  # Human
+        + 49  # Random
+    )
 
 
 def test_ppo_paper_count():
