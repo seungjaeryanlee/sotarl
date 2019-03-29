@@ -1,3 +1,4 @@
+from .algo__dqn import entries as dqn_entries
 from .algo__distributional_dqn import entries as distributional_dqn_entries
 from .algo__rainbow import entries as rainbow_entries
 
@@ -53,6 +54,7 @@ source = {
 # Populate entries
 entries = (
     []
+    + dqn_entries
     + distributional_dqn_entries
     + rainbow_entries
 )
