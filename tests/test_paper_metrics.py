@@ -112,7 +112,12 @@ def test_rnd_paper_count():
         'source-title': 'Exploration by Random Network Distillation',
     })
 
-    assert len(dqn2013_entries) == 6 * 3
+    assert len(dqn2013_entries) == (
+        0
+        + 6  # Dynamics
+        + 6  # PPO
+        + 6  # RND
+    )
 
 
 def test_trpo_paper_count():
