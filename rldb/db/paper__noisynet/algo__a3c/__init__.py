@@ -12,8 +12,8 @@ from .entries import entries
 # Specify ALGORITHM
 algo = {
     # ALGORITHM
-    "algo-title": "Asynchronous Advantage Actor Critic",
-    "algo-nickname": "A3C",
+    "algo-title": "Asynchronous Advantage Actor Critic (from NoisyNet)",
+    "algo-nickname": "A3C (from NoisyNet)",
     "algo-source-title": "Asynchronous Methods for Deep Reinforcement Learning",
 }
 
