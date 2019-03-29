@@ -98,7 +98,7 @@ def test_prioritized_dqn_paper_count():
         'source-title': 'Prioritized Experience Replay',
     })
 
-    assert len(dqn2013_entries) == 57 * 5 + 49 * 1
+    assert len(dqn2013_entries) == 57 * 5
 
 
 def test_rnd_paper_count():

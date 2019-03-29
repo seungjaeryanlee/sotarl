@@ -1,4 +1,3 @@
-from .algo__gorila import entries as gorila_entries
 from .algo__human import entries as human_entries
 from .algo__prop_prioritized_ddqn_tuned import entries as prop_pddqn_tuned_entries
 from .algo__random import entries as random_entries
@@ -45,7 +44,6 @@ source = {
 # Populate entries
 entries = (
     []
-    + gorila_entries
     + human_entries
     + prop_pddqn_tuned_entries
     + random_entries
