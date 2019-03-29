@@ -59,7 +59,7 @@ def test_dueling_dqn_paper_count():
         + 114  # Dueling DQN
         + 65   # Human
         + 114  # PDD DQN
-        + 65   # Random
+        + 16   # Random
     )
 
 
