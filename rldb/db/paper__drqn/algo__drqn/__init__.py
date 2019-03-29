@@ -15,4 +15,4 @@ algo = {
 # Populate entries
 entries = [{**entry, **algo} for entry in entries]
 
-assert len(entries) == 9
+assert len(entries) == 9 + 10

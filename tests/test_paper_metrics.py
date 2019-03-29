@@ -37,11 +37,15 @@ def test_dqn_paper_count():
 
 def test_drqn_paper_count():
     """Verify number of entries in DRQN paper."""
-    dqn2013_entries = rldb.find_all({
+    drqn_entries = rldb.find_all({
         'source-title': 'Deep Recurrent Q-Learning for Partially Observable MDPs',
     })
 
-    assert len(dqn2013_entries) == 9 * 2
+    assert len(drqn_entries) == (
+        0
+        + 19  # DQN (Ours)
+        + 19  # DRQN
+    )
 
 
 def test_dueling_dqn_paper_count():

@@ -1,4 +1,4 @@
-entries = [
+standard_entries = [
     {
         'env-title': 'atari-asteroids',
         "score-source-title": "Deep Recurrent Q-Learning for Partially Observable MDPs",
@@ -54,3 +54,78 @@ entries = [
         'stddev': 735,
     },
 ]
+
+flickering_entries = [
+    {
+        'env-title': 'atari-asteroids',
+        'env-variant': 'flickering',
+        "score-source-title": "Deep Recurrent Q-Learning for Partially Observable MDPs",
+        'score': 1010,
+        'stddev': 535,
+    },
+    {
+        'env-title': 'atari-beam-rider',
+        'env-variant': 'flickering',
+        "score-source-title": "Deep Recurrent Q-Learning for Partially Observable MDPs",
+        'score': 1685.6,
+        'stddev': 875,
+    },
+    {
+        'env-title': 'atari-bowling',
+        'env-variant': 'flickering',
+        "score-source-title": "Deep Recurrent Q-Learning for Partially Observable MDPs",
+        'score': 57.3,
+        'stddev': 8,
+    },
+    {
+        'env-title': 'atari-centipede',
+        'env-variant': 'flickering',
+        "score-source-title": "Deep Recurrent Q-Learning for Partially Observable MDPs",
+        'score': 5268.1,
+        'stddev': 2052,
+    },
+    {
+        'env-title': 'atari-chopper-command',
+        'env-variant': 'flickering',
+        "score-source-title": "Deep Recurrent Q-Learning for Partially Observable MDPs",
+        'score': 1450,
+        'stddev': 787.8,
+    },
+    {
+        'env-title': 'atari-double-dunk',
+        'env-variant': 'flickering',
+        "score-source-title": "Deep Recurrent Q-Learning for Partially Observable MDPs",
+        'score': -16.2,
+        'stddev': 2.6,
+    },
+    {
+        'env-title': 'atari-frostbite',
+        'env-variant': 'flickering',
+        "score-source-title": "Deep Recurrent Q-Learning for Partially Observable MDPs",
+        'score': 436,
+        'stddev': 462.5,
+    },
+    {
+        'env-title': 'atari-ice-hockey',
+        'env-variant': 'flickering',
+        "score-source-title": "Deep Recurrent Q-Learning for Partially Observable MDPs",
+        'score': -4.2,
+        'stddev': 1.5,
+    },
+    {
+        'env-title': 'atari-ms-pacman',
+        'env-variant': 'flickering',
+        "score-source-title": "Deep Recurrent Q-Learning for Partially Observable MDPs",
+        'score': 1824,
+        'stddev': 490,
+    },
+    {
+        'env-title': 'atari-pong',
+        'env-variant': 'flickering',
+        "score-source-title": "Deep Recurrent Q-Learning for Partially Observable MDPs",
+        'score': -9.9,
+        'stddev': 3.3,
+    },
+]
+
+entries = standard_entries + flickering_entries
