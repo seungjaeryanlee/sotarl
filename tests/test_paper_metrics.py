@@ -26,13 +26,13 @@ def test_dqn2013_paper_count():
     assert len(dqn2013_entries) == 8 * 7
 
 
-def test_dqn2015_paper_count():
-    """Verify number of entries in DQN2015 paper."""
-    dqn2015_entries = rldb.find_all({
+def test_dqn_paper_count():
+    """Verify number of entries in DQN paper."""
+    dqn_entries = rldb.find_all({
         'source-title': 'Human-level Control through Deep Reinforcement Learning',
     })
 
-    assert len(dqn2015_entries) == 49 * 5
+    assert len(dqn_entries) == 49 * 5
 
 
 def test_drqn_paper_count():

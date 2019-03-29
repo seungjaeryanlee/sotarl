@@ -4,14 +4,14 @@ from .algo__random import entries as random_entries
 from .algo__bll import entries as bll_entries
 from .algo__contingency import entries as contingency_entries
 from .algo__human import entries as human_entries
-from .algo__dqn2015 import entries as dqn2015_entries
+from .algo__dqn import entries as dqn_entries
 
 
 # Specify SOURCE
 source = {
     #  BASICS
     "source-title": "Human-level Control through Deep Reinforcement Learning",
-    "source-nickname": "DQN2015",
+    "source-nickname": "DQN",
     "source-authors": [
         "Volodymyr Mnih",
         "Koray Kavukcuoglu",
@@ -42,6 +42,6 @@ entries = (
     + bll_entries
     + contingency_entries
     + human_entries
-    + dqn2015_entries
+    + dqn_entries
 )
 entries = [{**entry, **source} for entry in entries]

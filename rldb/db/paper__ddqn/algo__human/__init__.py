@@ -2,7 +2,7 @@
 Human scores from DDQN paper.
 
   106 entries
- - 49 no-op entries from DQN2015
+ - 49 no-op entries from DQN
  - 49 human entries from Gorila DQN
 ------------------------------------------------------------------------
     8 unique entries
