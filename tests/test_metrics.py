@@ -30,4 +30,4 @@ def test_entries_count():
     """Verify number of entries in rldb. This number should match README."""
     all_entries = rldb.find_all({})
 
-    assert len(all_entries) == 1802
+    assert len(all_entries) == 1753
