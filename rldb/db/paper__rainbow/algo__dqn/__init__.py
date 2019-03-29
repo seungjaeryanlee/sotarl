@@ -21,4 +21,4 @@ algo = {
 # Populate entries
 entries = [{**entry, **algo} for entry in entries]
 
-assert len(entries) == 8
+assert len(entries) == 16
