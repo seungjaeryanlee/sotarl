@@ -30,7 +30,6 @@ def test_c51_paper_count():
     )
 
 
-
 def test_ddqn_paper_count():
     """Verify number of entries in DDQN paper."""
     ddqn_entries = rldb.find_all({
@@ -39,7 +38,7 @@ def test_ddqn_paper_count():
 
     assert len(ddqn_entries) == (
         0
-        + 57 + 49  # DDQN 
+        + 57 + 49  # DDQN
         + 57       # DDQN (tuned)
         + 8        # Human
         + 8        # Random
