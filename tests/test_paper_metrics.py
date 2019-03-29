@@ -126,4 +126,9 @@ def test_trpo_paper_count():
         'source-title': 'Trust Region Policy Optimization',
     })
 
-    assert len(dqn2013_entries) == 7 * 5
+    assert len(dqn2013_entries) == (
+        0
+        + 7  # TRPO (single path)
+        + 7  # TRPO (vine)
+        + 7  # UCC-I
+    )
