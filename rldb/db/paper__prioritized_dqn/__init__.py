@@ -1,6 +1,4 @@
-from .algo__human import entries as human_entries
 from .algo__prop_prioritized_ddqn_tuned import entries as prop_pddqn_tuned_entries
-from .algo__random import entries as random_entries
 from .algo__rank_prioritized import entries as rank_prioritized_entries
 from .algo__rank_prioritized_ddqn_tuned import entries as rank_pddqn_tuned_entries
 
@@ -44,9 +42,7 @@ source = {
 # Populate entries
 entries = (
     []
-    + human_entries
     + prop_pddqn_tuned_entries
-    + random_entries
     + rank_prioritized_entries
     + rank_pddqn_tuned_entries
 )
