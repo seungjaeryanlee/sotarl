@@ -8,7 +8,7 @@ def test_ddqn_paper_count():
         'source-title': 'Deep Reinforcement Learning with Double Q-learning',
     })
 
-    assert len(ddqn_entries) == 57 * 4 + 49 * 2
+    assert len(ddqn_entries) == 57 * 4 + 49 * 1
 
 
 def test_dqn2013_paper_count():
