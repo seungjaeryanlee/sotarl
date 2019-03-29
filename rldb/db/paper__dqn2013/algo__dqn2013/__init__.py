@@ -4,7 +4,7 @@ from .entries import entries
 # Specify ALGORITHM
 algo = {
     # ALGORITHM
-    "algo-title": "Deep Q-Network",
+    "algo-title": "Deep Q-Network (2013)",
     "algo-nickname": "DQN2013",
     "algo-source-title": "Playing Atari with Deep Reinforcement Learning",
 

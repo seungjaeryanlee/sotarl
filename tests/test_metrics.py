@@ -23,7 +23,7 @@ def test_algo_count():
     all_entries = rldb.find_all({})
     all_algos = set([e['algo-title'] for e in all_entries])
 
-    assert len(all_algos) == 34
+    assert len(all_algos) == 37
 
 
 def test_entries_count():

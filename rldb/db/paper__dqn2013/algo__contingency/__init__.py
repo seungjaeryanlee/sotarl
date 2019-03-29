@@ -4,7 +4,7 @@ from .entries import entries
 # Specify ALGORITHM
 algo = {
     # ALGORITHM
-    "algo-title": "Contingency Learning",
+    "algo-title": "Contingency",
     "algo-nickname": "Contingency",
     "algo-source-title": "Investigating Contingency Awareness Using Atari 2600 Games",
 
