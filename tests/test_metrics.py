@@ -30,7 +30,7 @@ def test_entries_count():
     """Verify number of entries in rldb. This number should match README."""
     all_entries = rldb.find_all({})
 
-    assert len(all_entries) == 1763
+    assert len(all_entries) == 2219
     assert len(all_entries) == (
         0
         + 171  # A3C
@@ -41,6 +41,7 @@ def test_entries_count():
         + 38   # DRQN
         + 301  # DuDQN
         + 245  # Gorila DQN
+        + 456  # NoisyNet
         + 147  # PPO
         + 171  # Prioritized DQN
         + 18   # RND
