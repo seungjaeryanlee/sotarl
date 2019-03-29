@@ -23,7 +23,17 @@ def test_dqn2013_paper_count():
         'source-title': 'Playing Atari with Deep Reinforcement Learning',
     })
 
-    assert len(dqn2013_entries) == 8 * 7
+    assert len(dqn2013_entries) == (
+        0
+        + 7  # Contingency
+        + 7  # DQN2013
+        + 7  # DQN2013 Best
+        + 7  # HNeat Best
+        + 7  # HNeat Pixel
+        + 7  # Human
+        + 7  # Random
+        + 7  # SARSA
+    )
 
 
 def test_dqn_paper_count():
@@ -32,7 +42,14 @@ def test_dqn_paper_count():
         'source-title': 'Human-level Control through Deep Reinforcement Learning',
     })
 
-    assert len(dqn_entries) == 49 * 5
+    assert len(dqn_entries) == (
+        0
+        + 49  # Best Linear Learner
+        + 49  # Contingency
+        + 49  # DQN
+        + 49  # Human
+        + 49  # Random
+    )
 
 
 def test_drqn_paper_count():
