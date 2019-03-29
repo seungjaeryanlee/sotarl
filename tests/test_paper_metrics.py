@@ -84,7 +84,12 @@ def test_ppo_paper_count():
         'source-title': 'Proximal Policy Optimization Algorithm',
     })
 
-    assert len(dqn2013_entries) == 49 * 3
+    assert len(dqn2013_entries) == (
+        0
+        + 49  # A2C
+        + 49  # ACER
+        + 49  # PPO
+    )
 
 
 def test_prioritized_dqn_paper_count():
