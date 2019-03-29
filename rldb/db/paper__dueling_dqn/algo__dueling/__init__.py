@@ -1,3 +1,11 @@
+"""
+DuDQN scores from DuDQN paper.
+
+ 114 entries
+------------------------------------------------------------------------
+ 114 unique entries
+
+"""
 from .entries import entries
 
 
