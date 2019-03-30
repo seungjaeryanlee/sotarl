@@ -6,7 +6,7 @@ from .algo__trpo import entries as trpo_entries
 # Specify SOURCE
 source = {
     #  BASICS
-    "source-title": "Scalable Trust-region Method for Deep Reinforcement Learning using Kronecker-factored Approximation",
+    "source-title": "Scalable trust-region method for deep reinforcement learning using Kronecker-factored approximation",
     "source-nickname": "ACKTR",
     "source-authors": [
         "Yuhuai Wu",
