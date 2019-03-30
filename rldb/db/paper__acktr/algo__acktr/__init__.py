@@ -1,9 +1,9 @@
 """
 ACKTR scores from ACKTR paper.
 
- 57 entries
+ 49 entries
 ------------------------------------------------------------------------
- 57 unique entries
+ 49 unique entries
 
 """
 from .entries import entries
@@ -20,4 +20,4 @@ algo = {
 # Populate entries
 entries = [{**entry, **algo} for entry in entries]
 
-assert len(entries) == 108
+assert len(entries) == 49
