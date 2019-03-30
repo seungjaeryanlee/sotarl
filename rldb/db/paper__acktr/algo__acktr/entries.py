@@ -1,4 +1,4 @@
-entries = [
+atari_entries = [
     {
         'env-title': 'atari-alien',
         'env-variant': 'No-op start',
@@ -220,3 +220,40 @@ entries = [
         'score': 17448.0,
     },
 ]
+
+mujoco_entries = [
+    {
+        'env-title': 'mujoco-ant',
+        'score': 4621.6,
+    },
+    {
+        'env-title': 'mujoco-half-cheetah',
+        'score': 5586.3,
+    },
+    {
+        'env-title': 'mujoco-hopper',
+        'score': 3915.9,
+    },
+    {
+        'env-title': 'mujoco-inverted-pendulum',
+        'score': 1000.0,
+    },
+    {
+        'env-title': 'mujoco-inverted-double-pendulum',
+        'score': 9356.0,
+    },
+    {
+        'env-title': 'mujoco-reacher',
+        'score': -1.5,
+    },
+    {
+        'env-title': 'mujoco-swimmer',
+        'score': 138.0,
+    },
+    {
+        'env-title': 'mujoco-walker2d',
+        'score': 6198.8,
+    },
+]
+
+entries = atari_entries + mujoco_entries

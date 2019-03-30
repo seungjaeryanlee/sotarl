@@ -1,9 +1,10 @@
 """
 TRPO scores from ACKTR paper.
 
- 6 entries
+  6 atari entries
+  8 mujoco entries
 ------------------------------------------------------------------------
- 6 unique entries
+ 14 unique entries
 
 """
 from .entries import entries
@@ -20,4 +21,4 @@ algo = {
 # Populate entries
 entries = [{**entry, **algo} for entry in entries]
 
-assert len(entries) == 6
+assert len(entries) == 14
