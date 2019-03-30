@@ -1,26 +1,30 @@
 entries = [
     {
         'env-title': 'mujoco-half-cheetah',
-        'score': ,
+        'score': -15.57,
     },
     {
         'env-title': 'mujoco-hopper',
-        'score': ,
+        'score': 2471.30,
+    },
+    {
+        'env-title': 'mujoco-walker2d',
+        'score': 2321.47,
     },
     {
         'env-title': 'mujoco-ant',
-        'score': ,
+        'score': -75.85,
     },
     {
         'env-title': 'mujoco-reacher',
-        'score': ,
+        'score': -111.43,
     },
     {
         'env-title': 'mujoco-inverted-pendulum',
-        'score': ,
+        'score': 985.40,
     },
     {
         'env-title': 'mujoco-inverted-double-pendulum',
-        'score': ,
+        'score': 205.85,
     },
 ]
