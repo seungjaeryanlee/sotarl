@@ -1,5 +1,5 @@
 """
-TD3 scores from TD3 paper.
+DDPG scores from TD3 paper.
 
  7 entries
 ------------------------------------------------------------------------
@@ -12,9 +12,9 @@ from .entries import entries
 # Specify ALGORITHM
 algo = {
     # ALGORITHM
-    "algo-title": "Twin Delayed Deep Deterministic Policy Gradient",
-    "algo-nickname": "TD3",
-    "algo-source-title": "Addressing Function Approximation Error in Actor-Critic Methods",
+    "algo-title": "Deep Deterministic Policy Gradient",
+    "algo-nickname": "DDPG",
+    "algo-source-title": "Continuous control with deep reinforcement learning",
 }
 
 # Populate entries  
