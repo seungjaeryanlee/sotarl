@@ -12,8 +12,8 @@ from .entries import entries
 # Specify ALGORITHM
 algo = {
     # ALGORITHM
-    "algo-title": "Deep Q-Network",
-    "algo-nickname": "DQN",
+    "algo-title": "Deep Q-Network (from OpenAI Baselines cbd21ef)",
+    "algo-nickname": "DQN (from OpenAI Baselines cbd21ef)",
     "algo-source-title": "Human-level Control through Deep Reinforcement Learning",
 }
 

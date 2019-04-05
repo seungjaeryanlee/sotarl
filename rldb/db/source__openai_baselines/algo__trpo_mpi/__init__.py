@@ -12,8 +12,8 @@ from .entries import entries
 # Specify ALGORITHM
 algo = {
     # ALGORITHM
-    "algo-title": "Trust Region Policy Optimization (MPI)",
-    "algo-nickname": "TRPO (MPI)",
+    "algo-title": "Trust Region Policy Optimization (MPI) (from OpenAI Baselines cbd21ef)",
+    "algo-nickname": "TRPO (MPI) (from OpenAI Baselines cbd21ef)",
     "algo-source-title": "Trust Region Policy Optimization",
 }
 

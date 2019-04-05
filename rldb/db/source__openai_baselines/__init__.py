@@ -33,7 +33,7 @@ source = {
   year = {2017},
   publisher = {GitHub},
   journal = {GitHub repository},
-  howpublished = {\url{https://github.com/openai/baselines}},
+  howpublished = {\\url{https://github.com/openai/baselines}},
 }""",
 }
 
