@@ -10,12 +10,12 @@ def test_envs_count():
     assert len(all_envs) == 65
 
 
-def test_paper_count():
-    """Verify number of papers in rldb. This number should match README."""
+def test_source_count():
+    """Verify number of sources in rldb. This number should match README."""
     all_entries = rldb.find_all({})
-    all_papers = set([e['source-title'] for e in all_entries])
+    all_sources = set([e['source-title'] for e in all_entries])
 
-    assert len(all_papers) == 19
+    assert len(all_sources) == 20
 
 
 def test_algo_count():
@@ -23,14 +23,14 @@ def test_algo_count():
     all_entries = rldb.find_all({})
     all_algos = set([e['algo-title'] for e in all_entries])
 
-    assert len(all_algos) == 68
+    assert len(all_algos) == 75
 
 
 def test_entries_count():
     """Verify number of entries in rldb. This number should match README."""
     all_entries = rldb.find_all({})
 
-    assert len(all_entries) == 2766
+    assert len(all_entries) == 2815
     assert len(all_entries) == (
         0
         + 171  # A3C
@@ -52,4 +52,6 @@ def test_entries_count():
         + 49   # TD3
         + 21   # TRPO
         + 15   # Trust-PCL
+
+        + 49   # OpenAI Baselines
     )
