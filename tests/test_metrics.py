@@ -15,7 +15,7 @@ def test_source_count():
     all_entries = rldb.find_all({})
     all_sources = set([e['source-title'] for e in all_entries])
 
-    assert len(all_sources) == 20
+    assert len(all_sources) == 21
 
 
 def test_algo_count():
@@ -23,14 +23,14 @@ def test_algo_count():
     all_entries = rldb.find_all({})
     all_algos = set([e['algo-title'] for e in all_entries])
 
-    assert len(all_algos) == 75
+    assert len(all_algos) == 77
 
 
 def test_entries_count():
     """Verify number of entries in rldb. This number should match README."""
     all_entries = rldb.find_all({})
 
-    assert len(all_entries) == 2815
+    assert len(all_entries) == 2829
     assert len(all_entries) == (
         0
         + 171  # A3C
@@ -53,5 +53,6 @@ def test_entries_count():
         + 21   # TRPO
         + 15   # Trust-PCL
 
-        + 49   # OpenAI Baselines
+        + 49   # OpenAI Baselines cbd21ef
+        + 14   # OpenAI Baselines ea68f3b
     )
