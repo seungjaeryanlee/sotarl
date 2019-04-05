@@ -1,30 +1,30 @@
 entries = [
     {
         'env-title': 'atari-enduro',
-        'score': ,
+        'score': 207.47,
     },
     {
         'env-title': 'atari-space-invaders',
-        'score': ,
+        'score': 459.89,
     },
     {
         'env-title': 'atari-qbert',
-        'score': ,
+        'score': 7184.73,
     },
     {
         'env-title': 'atari-seaquest',
-        'score': ,
+        'score': 1383.38,
     },
     {
         'env-title': 'atari-pong',
-        'score': ,
+        'score': 13.9,
     },
     {
         'env-title': 'atari-beam-rider',
-        'score': ,
+        'score': 594.45,
     },
     {
         'env-title': 'atari-breakout',
-        'score': ,
+        'score': 81.61,
     },
 ]
