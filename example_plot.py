@@ -15,7 +15,7 @@ def env_barplot(filter, plot_title, plot_name):
     deduped_entries = remove_duplicates(sorted_entries)
 
     # Draw bar plot
-    labels = ['{} ({})'.format(entry['algo-nickname'], entry['env-variant']) if 'env-variant' in entry else entry['algo-nickname'] for entry in deduped_entries]
+    labels = ['{} ({})'.format(entry['algo-nickname'], entry['env-variant']) if 'env-variant' in entry and 'env-variant' not in filter else entry['algo-nickname'] for entry in deduped_entries]
     scores = [entry['score'] for entry in deduped_entries]
     plt.figure(figsize=(12, 8))
     plt.barh(labels, scores)
