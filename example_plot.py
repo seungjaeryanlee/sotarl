@@ -54,7 +54,7 @@ def main():
             'env-title': 'atari-space-invaders',
             'env-variant': 'No-op start',
         },
-        plot_title='Atari Space Invaders Scores',
+        plot_title='Atari Space Invaders Scores (No-op start)',
         plot_name='atari-space-invaders',
     )
     env_barplot(
