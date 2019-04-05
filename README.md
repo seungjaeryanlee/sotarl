@@ -55,3 +55,7 @@ Database of state-of-the-art RL algorithms
 ## Sources
 
 - [x] [OpenAI Baselines](https://github.com/openai/baselines)
+
+## Will Not Add
+
+- [ ] [The Arcade Learning Environment: An Evaluation Platform for General Agents](https://arxiv.org/abs/1207.4708)
