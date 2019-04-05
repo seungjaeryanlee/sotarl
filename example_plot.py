@@ -3,8 +3,8 @@ import matplotlib.pyplot as plt
 import rldb
 
 
-def env_barplot(env_title, plot_title):
-    entries = rldb.find_all({ 'env-title': env_title })
+def env_barplot(filter, plot_title, plot_name):
+    entries = rldb.find_all(filter)
 
     # Dedupe and sort entries by score, increasing
     sorted_entries = sorted(
@@ -21,7 +21,7 @@ def env_barplot(env_title, plot_title):
     plt.barh(labels, scores)
     plt.title(plot_title)
     plt.tight_layout()
-    plt.savefig('docs/{}.png'.format(env_title))
+    plt.savefig('docs/{}.png'.format(plot_name))
     # plt.show()
     plt.clf()
 
@@ -49,8 +49,16 @@ def remove_duplicates(entries):
 
 
 def main():
-    env_barplot('atari-space-invaders', 'Atari Space Invaders Scores')
-    env_barplot('mujoco-walker2d', 'MuJoCo Walker2d Scores')
+    env_barplot(
+        filter={'env-title': 'atari-space-invaders'},
+        plot_title='Atari Space Invaders Scores',
+        plot_name='atari-space-invaders',
+    )
+    env_barplot(
+        filter={'env-title': 'mujoco-walker2d'},
+        plot_title='Atari Space Invaders Scores',
+        plot_name='mujoco-walker2d',
+    )
 
 
 if __name__ == '__main__':
