@@ -50,7 +50,10 @@ def remove_duplicates(entries):
 
 def main():
     env_barplot(
-        filter={'env-title': 'atari-space-invaders'},
+        filter={
+            'env-title': 'atari-space-invaders',
+            'env-variant': 'No-op start',
+        },
         plot_title='Atari Space Invaders Scores',
         plot_name='atari-space-invaders',
     )
