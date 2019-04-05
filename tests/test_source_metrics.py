@@ -5,7 +5,7 @@ import rldb
 def test_openai_baselines_count():
     """Verify number of entries in OpenAI Baselines."""
     a3c_entries = rldb.find_all({
-        'source-title': 'OpenAI Baselines',
+        'source-title': 'OpenAI Baselines cbd21ef',
     })
 
     assert len(a3c_entries) == (

@@ -10,8 +10,8 @@ from .algo__trpo_mpi import entries as trpo_mpi_entries
 # Specify SOURCE
 source = {
     #  BASICS
-    "source-title": "OpenAI Baselines",
-    "source-nickname": "OpenAI Baselines",
+    "source-title": "OpenAI Baselines cbd21ef",
+    "source-nickname": "OpenAI Baselines cbd21ef",
     "source-authors": [
         "Prafulla Dhariwal",
         "Christopher Hesse",
