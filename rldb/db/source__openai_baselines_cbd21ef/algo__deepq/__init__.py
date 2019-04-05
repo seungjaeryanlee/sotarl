@@ -1,5 +1,5 @@
 """
-DeepQ scores from OpenAI Baselines.
+DQN scores from OpenAI Baselines.
 
  7 entries
 ------------------------------------------------------------------------

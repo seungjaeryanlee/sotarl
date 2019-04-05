@@ -1,5 +1,5 @@
 """
-PPO2 scores from OpenAI Baselines.
+ACKTR scores from OpenAI Baselines.
 
  7 entries
 ------------------------------------------------------------------------

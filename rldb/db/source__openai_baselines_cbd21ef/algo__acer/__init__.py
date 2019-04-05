@@ -1,5 +1,5 @@
 """
-PPO2 scores from OpenAI Baselines.
+ACER scores from OpenAI Baselines.
 
  7 entries
 ------------------------------------------------------------------------
