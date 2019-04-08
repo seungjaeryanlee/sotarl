@@ -10,8 +10,8 @@ from .algo__sac import entries as sac_entries
 # Specify SOURCE
 source = {
     #  BASICS
-    "source-title": "RL Baselines Zoo",
-    "source-nickname": "RL Baselines Zoo",
+    "source-title": "RL Baselines Zoo b76641e",
+    "source-nickname": "RL Baselines Zoo b76641e",
     "source-authors": [
         "Antonin Raffin",
     ],
