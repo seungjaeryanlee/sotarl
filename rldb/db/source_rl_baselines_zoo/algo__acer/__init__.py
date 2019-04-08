@@ -1,9 +1,9 @@
 """
 ACER scores from PPO paper.
 
-   12 entries
+   11 entries
 ------------------------------------------------------------------------
-   12 unique entries
+   11 unique entries
 
 """
 from .entries import entries
@@ -20,4 +20,4 @@ algo = {
 # Populate entries
 entries = [{**entry, **algo} for entry in entries]
 
-assert len(entries) == 12
+assert len(entries) == 11
