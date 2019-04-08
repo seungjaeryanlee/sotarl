@@ -1,62 +1,17 @@
 entries = [
     {
-        'env-title': 'classic-acrobot',
-        'score': ,
-        'stddev': ,
+        'env-title': 'classic-pendulum',
+        'score': 244.566,
+        'stddev': 75.617,
     },
     {
-        'env-title': 'atari-beam-rider',
-        'score': ,
-        'stddev': ,
+        'env-title': 'box2d-lunarlander-continuous',
+        'score': 91.858,
+        'stddev': 1.350,
     },
     {
-        'env-title': 'atari-breakout',
-        'score': ,
-        'stddev': ,
-    },
-    {
-        'env-title': 'classic-cartpole',
-        'score': ,
-        'stddev': ,
-    },
-    {
-        'env-title': 'atari-enduro',
-        'score': ,
-        'stddev': ,
-    },
-    {
-        'env-title': 'box2d-lunarlander',
-        'score': ,
-        'stddev': ,
-    },
-    {
-        'env-title': 'classic-mountain-car',
-        'score': ,
-        'stddev': ,
-    },
-    {
-        'env-title': 'atari-ms-pacman',
-        'score': ,
-        'stddev': ,
-    },
-    {
-        'env-title': 'atari-pong',
-        'score': ,
-        'stddev': ,
-    },
-    {
-        'env-title': 'atari-qbert',
-        'score': ,
-        'stddev': ,
-    },
-    {
-        'env-title': 'atari-seaquest',
-        'score': ,
-        'stddev': ,
-    },
-    {
-        'env-title': 'atari-space-invaders',
-        'score': ,
-        'stddev': ,
+        'env-title': 'classic-mountain-car-continuous',
+        'score': -169.829,
+        'stddev': 93.303,
     },
 ]
