@@ -15,12 +15,39 @@ def env_barplot(filter, plot_title, plot_name):
     labels, scores, colors = entries_to_labels_scores(sorted_entries)
 
     # Draw bar plot
-    plt.figure(figsize=(12, 8))
-    bars = plt.barh(labels, scores, color=colors)
-    # Color 'Human' and 'Random' entries
+    fig, ax = plt.subplots(figsize=(12, 8))
+    bars = ax.barh(labels, scores, color=colors)
 
     # Add text
     plt.title(plot_title)
+    switch_label_align = False
+    for i, (bar, entry, score) in enumerate(zip(bars, sorted_entries, scores)):
+        tbox = ax.text(
+            x=bar.get_x() + bar.get_width() - 50,
+            y=bar.get_y() + bar.get_height() / 2,
+            s=str(score),
+            color='white',
+            fontweight='bold',
+            ha='right',
+            va='center',
+        )
+        print('Bar width: ', bar.get_width())
+        print('Textbox width: ', tbox.get_window_extent(renderer=fig.canvas.get_renderer()).width)
+
+        if switch_label_align or bar.get_window_extent(renderer=fig.canvas.get_renderer()).width < tbox.get_window_extent(renderer=fig.canvas.get_renderer()).width + 10:
+            switch_label_align = True
+            tbox.set_x(bar.get_x() + bar.get_width() + 50)
+            tbox.set_ha('left')
+
+            if entry['algo-title'] == 'Human':
+                color = 'red'
+            elif entry['algo-title'] == 'Random':
+                color = 'black'
+            else:
+                color = 'darkblue'
+            tbox.set_color(color)
+        
+
     plt.tight_layout()
     plt.savefig('docs/{}.png'.format(plot_name))
     # plt.show()
@@ -44,7 +71,6 @@ def entries_to_labels_scores(entries):
             label += ' (From {})'.format(entry['source-nickname'])
 
         # Special color for 'Human' and 'Random'
-        
         if entry['algo-title'] == 'Human':
             color = 'red'
         elif entry['algo-title'] == 'Random':
