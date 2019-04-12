@@ -18,11 +18,14 @@ def env_barplot(filter, plot_title, plot_name):
     fig, ax = plt.subplots(figsize=(12, 8))
     bars = ax.barh(labels, scores, color=colors)
 
-    # Add text
+    # Add title
     plt.title(plot_title)
-    switch_label_align = False
+
+    # Add score labels
+    switch_label_align = False # If true, put score label outside of barplot
     for i, (bar, entry, score) in enumerate(zip(bars, sorted_entries, scores)):
-        tbox = ax.text(
+
+        text = ax.text(
             x=bar.get_x() + bar.get_width() - 50,
             y=bar.get_y() + bar.get_height() / 2,
             s=str(score),
@@ -31,13 +34,15 @@ def env_barplot(filter, plot_title, plot_name):
             ha='right',
             va='center',
         )
-        print('Bar width: ', bar.get_width())
-        print('Textbox width: ', tbox.get_window_extent(renderer=fig.canvas.get_renderer()).width)
 
-        if switch_label_align or bar.get_window_extent(renderer=fig.canvas.get_renderer()).width < tbox.get_window_extent(renderer=fig.canvas.get_renderer()).width + 10:
+        # Check if putting score label outside of barplot would make it too long
+        bar_x1 = bar.get_window_extent(renderer=fig.canvas.get_renderer()).x1
+        ax_x1 = ax.get_window_extent(renderer=fig.canvas.get_renderer()).x1
+        text_width = text.get_window_extent(renderer=fig.canvas.get_renderer()).width
+        if switch_label_align or bar_x1 + text_width < ax_x1:
             switch_label_align = True
-            tbox.set_x(bar.get_x() + bar.get_width() + 50)
-            tbox.set_ha('left')
+            text.set_x(bar.get_x() + bar.get_width() + 50)
+            text.set_ha('left')
 
             if entry['algo-title'] == 'Human':
                 color = 'red'
@@ -45,8 +50,7 @@ def env_barplot(filter, plot_title, plot_name):
                 color = 'black'
             else:
                 color = 'darkblue'
-            tbox.set_color(color)
-        
+            text.set_color(color)
 
     plt.tight_layout()
     plt.savefig('docs/{}.png'.format(plot_name))
