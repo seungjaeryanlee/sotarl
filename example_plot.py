@@ -1,3 +1,5 @@
+from decimal import Decimal
+
 import matplotlib.pyplot as plt
 
 import rldb
@@ -81,7 +83,7 @@ def env_barplot(filter, plot_title, plot_name):
             steps_text = ax.text(
                 x=source_text_x - source_text_width * BBOX_TO_BAR_UNIT - 50,
                 y=bar.get_y()+bar.get_height()-0.4,
-                s=str(entry['algo-frames']),
+                s='{:.2E}'.format(Decimal(entry['algo-frames'])),
                 color='green',
                 ha='right',
                 va='top'
