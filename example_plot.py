@@ -5,6 +5,39 @@ import matplotlib.pyplot as plt
 import rldb
 
 
+def set_label(fig, ax, bar, entry, BBOX_TO_BAR_UNIT):
+    algo_text = ax.text(
+        x=bar.get_x()-100,
+        y=bar.get_y()+0.4,
+        s=str(entry['algo-nickname']),
+        color='black',
+        fontweight='bold',
+        ha='right',
+        va='bottom'
+    )
+    source_text = ax.text(
+        x=bar.get_x()-100,
+        y=bar.get_y()+bar.get_height()-0.4,
+        s=str(entry['source-nickname']),
+        color='red',
+        ha='right',
+        va='top'
+    )
+    source_text_x = source_text.get_position()[0]
+    source_text_width = source_text.get_window_extent(renderer=fig.canvas.get_renderer()).width
+
+    if 'algo-frames' in entry:
+        # TODO This is currently stub
+        frames_text = ax.text(
+            x=source_text_x - source_text_width * BBOX_TO_BAR_UNIT - 50,
+            y=bar.get_y()+bar.get_height()-0.4,
+            s='{:.2E}'.format(Decimal(entry['algo-frames'])),
+            color='green',
+            ha='right',
+            va='top'
+        )
+
+
 def set_score_text(fig, ax, bar, entry):
     score_text = ax.text(
         x=bar.get_x() + bar.get_width() - 30,
@@ -33,6 +66,7 @@ def set_score_text(fig, ax, bar, entry):
             color = 'darkblue'
         score_text.set_color(color)
 
+
 def env_barplot(filter, plot_title, plot_name):
     entries = rldb.find_all(filter)
 
@@ -58,36 +92,7 @@ def env_barplot(filter, plot_title, plot_name):
     BBOX_TO_BAR_UNIT = bars[0].get_width() / (bar_x1 - bar_x0)
     switch_label_align = False # If true, put score label outside of barplot
     for i, (bar, entry) in enumerate(zip(bars, sorted_entries)):
-        algo_text = ax.text(
-            x=bar.get_x()-100,
-            y=bar.get_y()+0.4,
-            s=str(entry['algo-nickname']),
-            color='black',
-            fontweight='bold',
-            ha='right',
-            va='bottom'
-        )
-        source_text = ax.text(
-            x=bar.get_x()-100,
-            y=bar.get_y()+bar.get_height()-0.4,
-            s=str(entry['source-nickname']),
-            color='red',
-            ha='right',
-            va='top'
-        )
-        source_text_x = source_text.get_position()[0]
-        source_text_width = source_text.get_window_extent(renderer=fig.canvas.get_renderer()).width
-
-        # TODO This is currently stub
-        if 'algo-frames' in entry:
-            steps_text = ax.text(
-                x=source_text_x - source_text_width * BBOX_TO_BAR_UNIT - 50,
-                y=bar.get_y()+bar.get_height()-0.4,
-                s='{:.2E}'.format(Decimal(entry['algo-frames'])),
-                color='green',
-                ha='right',
-                va='top'
-            )
+        set_label(fig, ax, bar, entry, BBOX_TO_BAR_UNIT)
         set_score_text(fig, ax, bar, entry)
 
     plt.tight_layout()
