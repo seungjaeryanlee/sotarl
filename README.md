@@ -21,7 +21,7 @@ Database of state-of-the-art RL algorithms
 
 Here is the format of every entry:
 
-```
+```python3
 {
     # BASICS
     "source-title": "",
@@ -48,9 +48,9 @@ Here is the format of every entry:
 - `algo-title` is the full title of the algorithm used. `algo-nickname` is the nickname or acronym for that algorithm if it exists, otherwise it is the same as `algo-nickname`.
 - `algo-source-title` is the title of the source of the **algorithm**. It can and often is different from `source-title`.
 
-For example, the **Space Invaders** score of **Asynchronous Advantage Actor Critic (A3C)** algorithm in the **Noisy Networks for Exploration** (NoisyNet) paper is represented by the following entry:
+For example, the **Space Invaders** score of **Asynchronous Advantage Actor Critic (A3C)** algorithm in the **Noisy Networks for Exploration (NoisyNet)** paper is represented by the following entry:
 
-```
+```python3
 {
     #  BASICS
     "source-title": "Noisy Networks for Exploration",
