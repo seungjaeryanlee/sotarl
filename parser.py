@@ -62,10 +62,10 @@ envs = [
 ]
 
 
-def parse_scores():
+def parse_scores(get_score_from_line):
     with open('input.txt', 'r') as f:
         lines = f.readlines()[1:]
-        scores = [line.strip().split(' ')[-1] for line in lines]
+        scores = [get_score_from_line(line.strip()) for line in lines]
 
     return scores
 
@@ -87,7 +87,7 @@ def generate_entries(envs: list, scores: list, env_variant: str = ''):
 
 
 if __name__ == '__main__':
-    scores = parse_scores()
+    scores = parse_scores(lambda line: line.split(' ')[-4])
 
     # env_variant should be '', 'Human start' or 'No-op start'
-    generate_entries(envs, scores, env_variant='Human start')
+    generate_entries(envs, scores, env_variant='No-op start')
