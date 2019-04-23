@@ -87,7 +87,7 @@ def generate_entries(envs: list, scores: list, env_variant: str = ''):
 
 
 if __name__ == '__main__':
-    scores = parse_scores(lambda line: line.split(' ')[-4])
+    scores = parse_scores(lambda line: line.split(' ')[-3])
 
     # env_variant should be '', 'Human start' or 'No-op start'
     generate_entries(envs, scores, env_variant='No-op start')
