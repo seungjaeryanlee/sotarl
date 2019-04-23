@@ -78,10 +78,10 @@ def generate_entries(envs: list, scores: list, env_variant: str = ''):
         f.write("[\n")
         for env, score in zip(envs, scores):
             f.write("    {\n")
-            f.write("        'env-title': {},\n".format(env))
+            f.write("        \"env-title\": \"{}\",\n".format(env))
             if env_variant:
-                f.write("        'env-variant': {},\n".format(env_variant))
-            f.write("        'score': {},\n".format(score))
+                f.write("        \"env-variant\": \"{}\",\n".format(env_variant))
+            f.write("        \"score\": {},\n".format(score))
             f.write("    },\n")
         f.write("]\n")
 
@@ -90,4 +90,4 @@ if __name__ == '__main__':
     scores = parse_scores()
 
     # env_variant should be '', 'Human start' or 'No-op start'
-    generate_entries(envs, scores, env_variant='')
+    generate_entries(envs, scores, env_variant='Human start')
