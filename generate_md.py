@@ -61,6 +61,7 @@ def save_file(filename, result):
         f.write(result)
 
 def generate_md(filepath, env_title):
+    """Generate a Markdown file for single environment."""
     # Get template
     template = get_template('markdown/source/{}'.format(filepath))
 
@@ -80,6 +81,13 @@ def generate_md(filepath, env_title):
     save_file('markdown/docs/{}'.format(filepath), result)
 
 def generate_md_atari(atari_envs):
+    """Generate a markdown file summarizing Atari environments."""
+    # TODO Implement Human normalized score in rldb
+    pass
+
+
+def generate_md_atari_batch(atari_envs):
+    """Generate all markdown files for Atari environments."""
     for name in atari_envs:
         subname = name[6:] # "atari-alien" -> "alien"
         generate_md(filepath='envs/gym/atari/{}.md'.format(subname), env_title='atari-{}'.format(subname))
@@ -91,3 +99,4 @@ if __name__ == "__main__":
     envs = set([entry['env-title'] for entry in entries])
     atari_envs = [env for env in envs if 'atari-' in env]
     generate_md_atari(atari_envs)
+    generate_md_atari_batch(atari_envs)
