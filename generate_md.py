@@ -79,9 +79,10 @@ def generate_md(filepath, env_title):
     result = populate_template(template, feed_dict)
     save_file('markdown/docs/{}'.format(filepath), result)
 
-def generate_md_atari(atari_subnames):
-    for name in atari_subnames:
-        generate_md(filepath='envs/gym/atari/{}.md'.format(name), env_title='atari-{}'.format(name))
+def generate_md_atari(atari_envs):
+    for name in atari_envs:
+        subname = name[6:] # "atari-alien" -> "alien"
+        generate_md(filepath='envs/gym/atari/{}.md'.format(subname), env_title='atari-{}'.format(subname))
 
 
 
@@ -89,5 +90,4 @@ if __name__ == "__main__":
     entries = rldb.find_all({})
     envs = set([entry['env-title'] for entry in entries])
     atari_envs = [env for env in envs if 'atari-' in env]
-
-    generate_md(filepath='envs/gym/atari/alien.md', env_title='atari-alien')
+    generate_md_atari(atari_envs)
