@@ -4,7 +4,10 @@ from .db import entries
 
 def get_human_normalized_score(entry):
     """
-    Return human-normalized score of the entry.
+    Return human-normalized score of the entry. 
+
+    This normalization is well documented in the Rainbow paper.
+    https://arxiv.org/abs/1710.02298
     """
     human_entries = find_all({
         'env-title': entry['env-title'],
