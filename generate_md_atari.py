@@ -61,16 +61,26 @@ def _generate_md_atari_main(filepath, atari_envs):
         entries.sort(key=lambda entry: entry['score'], reverse=True)
         entry = entries[0] # Best Performing algorithm
         source_link = get_best_source_link(entry) # Choose best link
-        noop_envs_table += '| [{}](/envs/gym/atari/{}) | {} | {} | [{}]({}) |\n'.format(
-            entry['env-title'][6:],
-            entry['env-title'][6:],
-            entry['score'],
-            entry['algo-nickname'],
-            entry['source-title'],
-            source_link['url'],
-        )
+        if entry['algo-nickname'] == 'Human':
+            noop_envs_table += '| [{}](/envs/gym/atari/{}) | {} | **{}** | [{}]({}) |\n'.format(
+                entry['env-title'][6:],
+                entry['env-title'][6:],
+                entry['score'],
+                entry['algo-nickname'],
+                entry['source-title'],
+                source_link['url'],
+            )
+        else:
+            noop_envs_table += '| [{}](/envs/gym/atari/{}) | {} | {} | [{}]({}) |\n'.format(
+                entry['env-title'][6:],
+                entry['env-title'][6:],
+                entry['score'],
+                entry['algo-nickname'],
+                entry['source-title'],
+                source_link['url'],
+            )
 
-    ## NOOP
+    ## HUMAN
     human_envs_table = ''
     human_envs_table += '| Environment | Result | Algorithm | Source |\n'
     human_envs_table += '|-------------|--------|-----------|--------|\n'
@@ -83,14 +93,24 @@ def _generate_md_atari_main(filepath, atari_envs):
         entries.sort(key=lambda entry: entry['score'], reverse=True)
         entry = entries[0] # Best Performing algorithm
         source_link = get_best_source_link(entry) # Choose best link
-        human_envs_table += '| [{}](/envs/gym/atari/{}) | {} | {} | [{}]({}) |\n'.format(
-            entry['env-title'][6:],
-            entry['env-title'][6:],
-            entry['score'],
-            entry['algo-nickname'],
-            entry['source-title'],
-            source_link['url'],
-        )
+        if entry['algo-nickname'] == 'Human':
+            human_envs_table += '| [{}](/envs/gym/atari/{}) | {} | **{}** | [{}]({}) |\n'.format(
+                entry['env-title'][6:],
+                entry['env-title'][6:],
+                entry['score'],
+                entry['algo-nickname'],
+                entry['source-title'],
+                source_link['url'],
+            )
+        else:
+            human_envs_table += '| [{}](/envs/gym/atari/{}) | {} | {} | [{}]({}) |\n'.format(
+                entry['env-title'][6:],
+                entry['env-title'][6:],
+                entry['score'],
+                entry['algo-nickname'],
+                entry['source-title'],
+                source_link['url'],
+            )
 
     result = populate_template(template, {
         "noop_envs_table": noop_envs_table,
