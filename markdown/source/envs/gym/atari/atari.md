@@ -11,8 +11,8 @@ redirect_from:
 nav:
  - name: Overview
    permalink: '#overview'
- - name: State of the Art
-   permalink: '#state-of-the-art'
+ - name: Performances
+   permalink: '#performances'
  - name: Installation
    permalink: '#installation'
  - name: Variants
@@ -51,11 +51,20 @@ The Atari 2600 environments was originally provided through the [Arcade Learning
 
 
 
-## State of the Art
+## Performances
 
 *Note: Most papers use 57 Atari 2600 games, and a couple of them are not supported by OpenAI Gym.*
 
-These are the published state-of-the-art results for Atari 2600 testbed. To test the robustness of the agent, most papers use one or both settings: the *no-op starts* and the *human starts*, both devised to provide a nondeterministic starting position. In *No-op start* setting, the agent selects the "do nothing" action for up to 30 times at the start of an episode. providing random starting positions to the agent. This originates from the [DQN2015 paper](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) by Mnih et al. (2015). In the *human start* setting,  the agents start from one of the 100 starting points sampled from a human professional's gameplay. The human starts setting originates from the [GorilaDQN paper](https://arxiv.org/abs/1507.04296) by Nair et al. (2015).
+These are the published results for Atari 2600 testbed. To test the robustness of the agent, most papers use one or both settings: the *no-op starts* and the *human starts*, both devised to provide a nondeterministic starting position. In *No-op start* setting, the agent selects the "do nothing" action for up to 30 times at the start of an episode. providing random starting positions to the agent. This originates from the [DQN2015 paper](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) by Mnih et al. (2015). In the *human start* setting,  the agents start from one of the 100 starting points sampled from a human professional's gameplay. The human starts setting originates from the [GorilaDQN paper](https://arxiv.org/abs/1507.04296) by Nair et al. (2015).
+
+These results are from [RL Database](https://github.com/seungjaeryanlee/rldb). If this page was helpful, please consider giving a star!
+
+<!-- Place this tag where you want the button to render. -->
+<a class="github-button" href="https://github.com/seungjaeryanlee/rldb" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star seungjaeryanlee/rldb on GitHub">Star</a>
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+
 
 ### Median
 
