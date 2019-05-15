@@ -119,128 +119,11 @@ If you want to see how other methods performed in each Atari 2600 games, you can
 
 #### No-op Starts
 
-| Game                                                      | Result      | Method              | Type      | Score from                                                   |
-| --------------------------------------------------------- | ----------- | ------------------- | --------- | ------------------------------------------------------------ |
-| [Alien](/envs/gym/atari/alien)                            | 40804.9     | ApeX DQN            | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [Amidar](/envs/gym/atari/amidar)                          | 8659.2      | ApeX DQN            | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [Assault](/envs/gym/atari/assault)                        | 24559.4     | ApeX DQN            | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [Asterix](/envs/gym/atari/asterix)                        | 428200.3    | RainbowDQN          | DQN       | [Rainbow: Combining Improvements in Deep Reinforcement Learning](https://arxiv.org/abs/1710.02298) |
-| [Asteroids](/envs/gym/atari/asteroids)                    | 155495.1    | ApeX DQN            | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [Atlantis](/envs/gym/atari/atlantis)                      | 3433182.0   | ACKTR               | PG        | [Scalable trust-region method for deep reinforcement learning using Kronecker-factored approximation](https://arxiv.org/abs/1708.05144) |
-| [Bank Heist](/envs/gym/atari/bank-heist)                  | 1716.4      | ApeX DQN            | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [Battle Zone](/envs/gym/atari/battle-zone)                | 98895.0     | ApeX DQN            | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [Beam Rider](/envs/gym/atari/beam-rider)                  | 63305.2     | ApeX DQN            | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [**Bowling**](/envs/gym/atari/bowling)                    | **160.7**   | **Human**           | **Human** | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
-| [Boxing](/envs/gym/atari/boxing)                          | 100.0       | ApeX DQN            | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [Breakout](/envs/gym/atari/breakout)                      | 800.9       | ApeX DQN            | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [Centipede](/envs/gym/atari/centipede)                    | 49065.8     | DDQN+PopArt         | DQN       | [Learning values across many orders of magnitude](https://arxiv.org/abs/1602.07714) |
-| [Chopper Command](/envs/gym/atari/chopper-command)        | 721851.0    | ApeX DQN            | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [Crazy Climber](/envs/gym/atari/crazy-climber)            | 320426.0    | ApeX DQN            | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [Demon Attack](/envs/gym/atari/demon-attack)              | 274176.7    | ACKTR               | PG        | [Scalable trust-region method for deep reinforcement learning using Kronecker-factored approximation](https://arxiv.org/abs/1708.05144) |
-| [Double Dunk](/envs/gym/atari/double-dunk)                | 23.5        | ApeX DQN            | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [Enduro](/envs/gym/atari/enduro)                          | 3454.0      | C51                 | Misc      | [A Distributional Perspective on Reinforcement Learning](https://arxiv.org/abs/1707.06887) |
-| [Fishing Derby](/envs/gym/atari/fishing-derby)            | 57.0        | NoisyNet-DuelingDQN | DQN       | [Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295) |
-| [Freeway](/envs/gym/atari/freeway)                        | 34.0        | RainbowDQN          | DQN       | [Rainbow: Combining Improvements in Deep Reinforcement Learning](https://arxiv.org/abs/1710.02298) |
-| [Frostbite](/envs/gym/atari/frostbite)                    | 9590.5      | RainbowDQN          | DQN       | [Rainbow: Combining Improvements in Deep Reinforcement Learning](https://arxiv.org/abs/1710.02298) |
-| [Gopher](/envs/gym/atari/gopher)                          | 120500.9    | ApeX DQN            | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [**Gravitar**](/envs/gym/atari/gravitar)                  | **3351.4**  | **Human**           | **Human** | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
-| [H.E.R.O.](/envs/gym/atari/hero)                          | 105929.4    | DQfD                | Imitation | [Deep Q-Learning from Demonstrations](https://arxiv.org/abs/1704.03732) |
-| [Ice Hockey](/envs/gym/atari/ice-hockey)                  | 33.0        | ApeX DQN            | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [James Bond](/envs/gym/atari/james-bond)                  | 21322.5     | ApeX DQN            | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [Kangaroo](/envs/gym/atari/kangaroo)                      | 16200.0     | PERDDQN (rank)      | DQN       | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
-| [Krull](/envs/gym/atari/krull)                            | 22849.0     | NoisyNet-A3C        | PG        | [Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295) |
-| [Kung-Fu Master](/envs/gym/atari/kung-fu-master)          | 97829.5     | ApeX DQN            | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [Montezuma's Revenge](/envs/gym/atari/montezumas-revenge) | 41098.4     | YouTube             | Imitation | [Playing hard exploration games by watching YouTube](https://arxiv.org/abs/1805.11592) |
-| [**Ms. Pacman**](/envs/gym/atari/ms-pacman)               | **15693**   | **Human**           | **Human** | [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) |
-| [Name This Game](/envs/gym/atari/name-this-game)          | 25783.3     | ApeX DQN            | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [Pong](/envs/gym/atari/pong)                              | 21.0        | DDQN                | DQN       | [Deep Reinforcement Learning with Double Q-learning](https://arxiv.org/abs/1509.06461) |
-| [Private Eye](/envs/gym/atari/private-eye)                | 98763.2     | YouTube             | Imitation | [Playing hard exploration games by watching YouTube](https://arxiv.org/abs/1805.11592) |
-| [Q*Bert](/envs/gym/atari/qbert)                           | 302391.3    | ApeX DQN            | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [River Raid](/envs/gym/atari/river-raid)                  | 63864.4     | ApeX DQN            | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [Road Runner](/envs/gym/atari/road-runner)                | 234352.0    | NoisyNet-DuelingDQN | DQN       | [Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295) |
-| [Robotank](/envs/gym/atari/robotank)                      | 73.8        | ApeX DQN            | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [Seaquest](/envs/gym/atari/seaquest)                      | 392952.3    | ApeX DQN            | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [Space Invaders](/envs/gym/atari/space-invaders)          | 54681.0     | ApeX DQN            | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [Star Gunner](/envs/gym/atari/star-gunner)                | 434342.5    | ApeX DQN            | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [Tennis](/envs/gym/atari/tennis)                          | 23.9        | ApeX DQN            | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [Time Pilot](/envs/gym/atari/time-pilot)                  | 87085.0     | ApeX DQN            | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [Tutankham](/envs/gym/atari/tutankham)                    | 314.3       | ACKTR               | PG        | [Scalable trust-region method for deep reinforcement learning using Kronecker-factored approximation](https://arxiv.org/abs/1708.05144) |
-| [Up and Down](/envs/gym/atari/up-and-down)                | 436665.8    | ACKTR               | PG        | [Scalable trust-region method for deep reinforcement learning using Kronecker-factored approximation](https://arxiv.org/abs/1708.05144) |
-| [Venture](/envs/gym/atari/venture)                        | 1813.0      | ApeX DQN            | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [Video Pinball](/envs/gym/atari/video-pinball)            | 949604.0    | C51                 | Misc      | [A Distributional Perspective on Reinforcement Learning](https://arxiv.org/abs/1707.06887) |
-| [Wizard of Wor](/envs/gym/atari/wizard-of-wor)            | 46204.0     | ApeX DQN            | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [Zaxxon](/envs/gym/atari/zaxxon)                          | 42285.5     | ApeX DQN            | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [Berzerk](/envs/gym/atari/berzerk)                        | 57196.7     | ApeX DQN            | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [Defender](/envs/gym/atari/defender)                      | 411943.5    | ApeX DQN            | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [Phoenix](/envs/gym/atari/phoenix)                        | 224491.1    | ApeX DQN            | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [Pit Fall](/envs/gym/atari/pit-fall)                      | 60258.9     | YouTube             | Imitation | [Playing hard exploration games by watching YouTube](https://arxiv.org/abs/1805.11592) |
-| [**Skiing**](/envs/gym/atari/skiing)                      | **-4336.9** | **Human**           | **Human** | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
-| [Solaris](/envs/gym/atari/solaris)                        | 12380.0     | A3C                 | PG        | [Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295) |
-| [Surround](/envs/gym/atari/surround)                      | 10.0        | NoisyNet-DuelingDQN | DQN       | [Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295) |
-| [Yars Revenge](/envs/gym/atari/yars-revenge)              | 148594.8    | ApeX DQN            | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
+$noop_envs_table
 
 #### Human Starts
 
-| Game                                                         | Result      | Method            | Type      | Score from                                                   |
-| ------------------------------------------------------------ | ----------- | ----------------- | --------- | ------------------------------------------------------------ |
-| [Alien](/envs/gym/atari/alien)                               | 17731.5     | ApeX DQN          | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [**Amidar**](/envs/gym/atari/amidar)                         | **1540.4**  | **Human**         | **Human** | [Massively Parallel Methods for Deep Reinforcement Learning](https://arxiv.org/abs/1507.04296) |
-| [Assault](/envs/gym/atari/assault)                           | 24404.6     | ApeX DQN          | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [Asterix](/envs/gym/atari/asterix)                           | 395599.5    | DistributionalDQN | DQN       | [Rainbow: Combining Improvements in Deep Reinforcement Learning](https://arxiv.org/abs/1710.02298) |
-| [Asteroids](/envs/gym/atari/asteroids)                       | 117303.4    | ApeX DQN          | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [Atlantis](/envs/gym/atari/atlantis)                         | 918714.5    | ApeX DQN          | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [Bank Heist](/envs/gym/atari/bank-heist)                     | 1200.8      | ApeX DQN          | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [Battle Zone](/envs/gym/atari/battle-zone)                   | 92275.0     | ApeX DQN          | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [Beam Rider](/envs/gym/atari/beam-rider)                     | 72233.7     | ApeX DQN          | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [**Bowling**](/envs/gym/atari/bowling)                       | **146.5**   | **Human**         | **Human** | [Massively Parallel Methods for Deep Reinforcement Learning](https://arxiv.org/abs/1507.04296) |
-| [Boxing](/envs/gym/atari/boxing)                             | 80.9        | ApeX DQN          | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [Breakout](/envs/gym/atari/breakout)                         | 766.8       | A3C LSTM          | PG        | [Asynchronous Methods for Deep Learning](https://arxiv.org/abs/1602.01783) |
-| [**Centipede**](/envs/gym/atari/centipede)                   | **10321.9** | **Human**         | **Human** | [Massively Parallel Methods for Deep Reinforcement Learning](https://arxiv.org/abs/1507.04296) |
-| [Chopper Command](/envs/gym/atari/chopper-command)           | 576601.5    | ApeX DQN          | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [Crazy Climber](/envs/gym/atari/crazy-climber)               | 263953.5    | ApeX DQN          | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [Demon Attack](/envs/gym/atari/demon-attack)                 | 133002.1    | ApeX DQN          | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [Double Dunk](/envs/gym/atari/double-dunk)                   | 22.3        | ApeX DQN          | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [Enduro](/envs/gym/atari/enduro)                             | 2223.9      | DuelingPERDQN     | DQN       | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
-| [Fishing Derby](/envs/gym/atari/fishing-derby)               | 22.6        | RainbowDQN        | DQN       | [Rainbow: Combining Improvements in Deep Reinforcement Learning](https://arxiv.org/abs/1710.02298) |
-| [Freeway](/envs/gym/atari/freeway)                           | 29.1        | RainbowDQN        | DQN       | [Rainbow: Combining Improvements in Deep Reinforcement Learning](https://arxiv.org/abs/1710.02298) |
-| [Frostbite](/envs/gym/atari/frostbite)                       | 6511.5      | ApeX DQN          | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [Gopher](/envs/gym/atari/gopher)                             | 121168.2    | ApeX DQN          | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [**Gravitar**](/envs/gym/atari/gravitar)                     | **3116.0**  | **Human**         | **Human** | [Massively Parallel Methods for Deep Reinforcement Learning](https://arxiv.org/abs/1507.04296) |
-| [H.E.R.O.](/envs/gym/atari/hero)                             | 50496.8     | RainbowDQN        | DQN       | [Rainbow: Combining Improvements in Deep Reinforcement Learning](https://arxiv.org/abs/1710.02298) |
-| [Ice Hockey](/envs/gym/atari/ice-hockey)                     | 24.0        | ApeX DQN          | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [James Bond](/envs/gym/atari/james-bond)                     | 18992.3     | ApeX DQN          | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [Kangaroo](/envs/gym/atari/kangaroo)                         | 12185.0     | PERDDQN (rank)    | DQN       | [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581) |
-| [Krull](/envs/gym/atari/krull)                               | 11209.5     | PERDQN (rank)     | DQN       | [Prioritized Experience Replay](https://arxiv.org/abs/1511.05952) |
-| [Kung-Fu Master](/envs/gym/atari/kung-fu-master)             | 72068.0     | ApeX DQN          | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [**Montezuma's Revenge**](/envs/gym/atari/montezumas-revenge) | **4182.0**  | **Human**         | **Human** | [Massively Parallel Methods for Deep Reinforcement Learning](https://arxiv.org/abs/1507.04296) |
-| [**Ms. Pacman**](/envs/gym/atari/ms-pacman)                  | **15375.0** | **Human**         | **Human** | [Massively Parallel Methods for Deep Reinforcement Learning](https://arxiv.org/abs/1507.04296) |
-| [Name This Game](/envs/gym/atari/name-this-game)             | 23829.9     | ApeX DQN          | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [Pong](/envs/gym/atari/pong)                                 | 19.1        | DDQN              | DQN       | [Deep Reinforcement Learning with Double Q-learning](https://arxiv.org/abs/1509.06461) |
-| [**Private Eye**](/envs/gym/atari/private-eye)               | **64169.1** | **Human**         | **Human** | [Massively Parallel Methods for Deep Reinforcement Learning](https://arxiv.org/abs/1507.04296) |
-| [Q*Bert](/envs/gym/atari/qbert)                              | 380152.1    | ApeX DQN          | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [River Raid](/envs/gym/atari/river-raid)                     | 49982.8     | ApeX DQN          | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [Road Runner](/envs/gym/atari/road-runner)                   | 127111.5    | ApeX DQN          | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [Robotank](/envs/gym/atari/robotank)                         | 68.5        | ApeX DQN          | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [Seaquest](/envs/gym/atari/seaquest)                         | 377179.8    | ApeX DQN          | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [Space Invaders](/envs/gym/atari/space-invaders)             | 50699.3     | ApeX DQN          | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [Star Gunner](/envs/gym/atari/star-gunner)                   | 432958.0    | ApeX DQN          | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [Tennis](/envs/gym/atari/tennis)                             | 23.0        | ApeX DQN          | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [Time Pilot](/envs/gym/atari/time-pilot)                     | 71543.0     | ApeX DQN          | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [Tutankham](/envs/gym/atari/tutankham)                       | 156.3       | A3C FF (4 days)   | PG        | [Asynchronous Methods for Deep Learning](https://arxiv.org/abs/1602.01783) |
-| [Up and Down](/envs/gym/atari/up-and-down)                   | 347912.2    | ApeX DQN          | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [**Venture**](/envs/gym/atari/venture)                       | **1039.0**  | **Human**         | **Human** | [Massively Parallel Methods for Deep Reinforcement Learning](https://arxiv.org/abs/1507.04296) |
-| [Video Pinball](/envs/gym/atari/video-pinball)               | 873988.5    | ApeX DQN          | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [Wizard of Wor](/envs/gym/atari/wizard-of-wor)               | 46897.0     | ApeX DQN          | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [Zaxxon](/envs/gym/atari/zaxxon)                             | 37672.0     | ApeX DQN          | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [Berzerk](/envs/gym/atari/berzerk)                           | 55598.9     | ApeX DQN          | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [Defender](/envs/gym/atari/defender)                         | 399865.3    | ApeX DQN          | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [Phoenix](/envs/gym/atari/phoenix)                           | 188788.5    | ApeX DQN          | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-| [**Pit Fall**](/envs/gym/atari/pit-fall)                     | **5998.9**  | **Human**         | **Human** | [Deep Reinforcement Learning with Double Q-learning](https://arxiv.org/abs/1509.06461) |
-| [**Skiing**](/envs/gym/atari/skiing)                         | **-3686.6** | **Human**         | **Human** | [Deep Reinforcement Learning with Double Q-learning](https://arxiv.org/abs/1509.06461) |
-| [**Solaris**](/envs/gym/atari/solaris)                       | **11032.6** | **Human**         | **Human** | [Deep Reinforcement Learning with Double Q-learning](https://arxiv.org/abs/1509.06461) |
-| [Surround](/envs/gym/atari/surround)                         | 7.0         | RainbowDQN        | DQN       | [Rainbow: Combining Improvements in Deep Reinforcement Learning](https://arxiv.org/abs/1710.02298) |
-| [Yars Revenge](/envs/gym/atari/yars-revenge)                 | 131701.1    | ApeX DQN          | DQN       | [Distributed Prioritized Experience Replay](https://arxiv.org/abs/1803.00933) |
-
+$human_envs_table
 
 
 
@@ -277,11 +160,11 @@ env.close()
 
 ## Variants
 
-In OpenAI Gym, each game has a few variants, distinguished by their suffixes. Through these variants, you can configure frame skipping and sticky actions. Frame skipping is a technique of using $k$-th frame. In other words, the agent only makes action every $k$ frames, and the same action is performed for $k$ frames. Sticky actions is a technique of setting some nonzero probability $p$ of action being repeated without agent's control. This adds  stochasticity to the deterministic Atari 2600 environments.
+In OpenAI Gym, each game has a few variants, distinguished by their suffixes. Through these variants, you can configure frame skipping and sticky actions. Frame skipping is a technique of using $$k$$-th frame. In other words, the agent only makes action every $$k$$ frames, and the same action is performed for $$k$$ frames. Sticky actions is a technique of setting some nonzero probability $$p$$ of action being repeated without agent's control. This adds  stochasticity to the deterministic Atari 2600 environments.
 
 For example, there are six variants for the *Pong* environment.
 
-| Name                                | Frame Skip $k$  | Repeat action probability $p$ |
+| Name                                | Frame Skip $$k$$  | Repeat action probability $$p$$ |
 | ----------------------------------- | --------------- | ----------------------------- |
 | `Pong-v0`                           | 2~4<sup>1</sup> | 0.25                          |
 | `Pong-v4`                           | 2~4<sup>1</sup> | 0                             |
@@ -291,7 +174,7 @@ For example, there are six variants for the *Pong* environment.
 | `PongNoFrameskip-v4`                | 1               | 0                             |
 
 <sub>
-<sup>1</sup> $k$ is chosen randomly at every step from values $\{2, 3, 4\}$.<br/><sup>2</sup> For *Space Invaders*,  the `Deterministic` variant $k=3$. This is because when $k=4$, the lasers are invisible because it frame skip coincides with the blinking frequency of lasers.<br/><sup>3</sup> `Deterministic-v4` is the configuration used to assess Deep Q-Networks.
+<sup>1</sup> $$k$$ is chosen randomly at every step from values $$\{2, 3, 4\}$$.<br/><sup>2</sup> For *Space Invaders*, the `Deterministic` variant $$k=3$$. This is because when $$k=4$$, the lasers are invisible because it frame skip coincides with the blinking frequency of lasers.<br/><sup>3</sup> `Deterministic-v4` is the configuration used to assess Deep Q-Networks.
 </sub>
 
 For more details about *frame skipping* and *sticky actions*, check Sections 2 and 5 of the ALE whitepaper: [Revisiting the Arcade Learning Environment](https://arxiv.org/abs/1709.06009).
