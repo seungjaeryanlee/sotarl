@@ -108,6 +108,42 @@ def generate_md_atari_batch(atari_envs):
         generate_md(filepath='envs/gym/atari/{}.md'.format(subname), env_title='atari-{}'.format(subname))
 
 
+def generate_md_mujoco_main(filepath, mujoco_envs):
+    # Get template
+    template = get_template('markdown/source/{}'.format(filepath))
+
+    table = ''
+    table += '| Environment | Result | Algorithm | Source |\n'
+    table += '|-------------|--------|-----------|--------|\n'
+
+    for env_title in mujoco_envs:
+        entries = rldb.find_all({
+            'env-title': env_title,
+        })
+        entries.sort(key=lambda entry: entry['score'], reverse=True)
+        entry = entries[0] # Best Performing algorithm
+        # Choose best link
+        source_link = ''
+        for link in entry['source-links']:
+            if link['type'] == 'ArXiv': # Best link
+                source_link = link
+            elif link['type'] == 'PDF': # Second-best link
+                if not source_link or source_link['type'] != 'ArXiv':
+                    source_link = link
+            elif link['type'] == 'GitHub':
+                if not source_link or source_link['type'] not in ['ArXiv', 'PDF']:
+                    source_link = link
+            else:
+                if not source_link or source_link['type'] not in ['ArXiv', 'PDF', 'GitHub']:
+                    source_link = link
+
+        table += '| {} | {} | {} | [{}]({}) |\n'.format(
+            entry['env-title'][7:], entry['score'], entry['algo-nickname'], entry['source-title'], source_link['url'],
+        )
+
+    result = populate_template(template, { "table": table })
+    save_file('markdown/docs/{}'.format(filepath), result)
+
 def generate_md_mujoco_single(filepath, env_title):
     """Generate a Markdown file for single environment."""
     # Get template
@@ -127,6 +163,7 @@ def generate_md_mujoco_single(filepath, env_title):
 
 def generate_md_mujoco_batch(mujoco_envs):
     """Generate all markdown files for MuJoCo environments."""
+    generate_md_mujoco_main('envs/gym/mujoco/mujoco.md', mujoco_envs)
     for name in mujoco_envs:
         subname = name[7:] # "mujoco-walker2d" -> "walker2d"
         generate_md_mujoco_single(filepath='envs/gym/mujoco/{}.md'.format(subname), env_title='mujoco-{}'.format(subname))
