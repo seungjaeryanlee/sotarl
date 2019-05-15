@@ -9,8 +9,6 @@ nav:
   permalink: '#overview'
 - name: Environments
   permalink: '#environments'
-- name: State of the Art
-  permalink: '#state-of-the-art'
 - name: Installation
   permalink: '#installation'
 
