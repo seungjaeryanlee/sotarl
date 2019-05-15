@@ -38,17 +38,18 @@ def entries_to_table(entries):
     table += '|--------|-----------|--------|\n'
     for entry in entries:
         # Choose best link
+        source_link = ''
         for link in entry['source-links']:
             if link['type'] == 'ArXiv': # Best link
                 source_link = link
             elif link['type'] == 'PDF': # Second-best link
-                if source_link['type'] != 'ArXiv':
+                if not source_link or source_link['type'] != 'ArXiv':
                     source_link = link
             elif link['type'] == 'GitHub':
-                if source_link['type'] not in ['ArXiv', 'PDF']:
+                if not source_link or source_link['type'] not in ['ArXiv', 'PDF']:
                     source_link = link
             else:
-                if source_link['type'] not in ['ArXiv', 'PDF', 'GitHub']:
+                if not source_link or source_link['type'] not in ['ArXiv', 'PDF', 'GitHub']:
                     source_link = link
 
         # Boldface if Human or Random
@@ -107,10 +108,37 @@ def generate_md_atari_batch(atari_envs):
         generate_md(filepath='envs/gym/atari/{}.md'.format(subname), env_title='atari-{}'.format(subname))
 
 
+def generate_md_mujoco_single(filepath, env_title):
+    """Generate a Markdown file for single environment."""
+    # Get template
+    template = get_template('markdown/source/{}'.format(filepath))
+
+    # Parse rldb
+    entries = rldb.find_all({
+        'env-title': env_title,
+    })
+    entries.sort(key=lambda entry: entry['score'], reverse=True)
+    feed_dict = {
+        'table': entries_to_table(entries),
+    }
+
+    result = populate_template(template, feed_dict)
+    save_file('markdown/docs/{}'.format(filepath), result)
+
+def generate_md_mujoco_batch(mujoco_envs):
+    """Generate all markdown files for MuJoCo environments."""
+    for name in mujoco_envs:
+        subname = name[7:] # "mujoco-walker2d" -> "walker2d"
+        generate_md_mujoco_single(filepath='envs/gym/mujoco/{}.md'.format(subname), env_title='mujoco-{}'.format(subname))
+
+
+
 
 if __name__ == "__main__":
     entries = rldb.find_all({})
     envs = set([entry['env-title'] for entry in entries])
     atari_envs = [env for env in envs if 'atari-' in env]
+    mujoco_envs = [env for env in envs if 'mujoco-' in env]
     generate_md_atari(atari_envs)
     generate_md_atari_batch(atari_envs)
+    generate_md_mujoco_batch(mujoco_envs)
