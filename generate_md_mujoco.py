@@ -21,7 +21,8 @@ def _generate_md_mujoco_main(filepath, mujoco_envs):
         entries.sort(key=lambda entry: entry['score'], reverse=True)
         entry = entries[0] # Best Performing algorithm
         source_link = get_best_source_link(entry) # Choose best link
-        table += '| {} | {} | {} | [{}]({}) |\n'.format(
+        table += '| [{}](/envs/gym/mujoco/{}) | {} | {} | [{}]({}) |\n'.format(
+            entry['env-title'][7:],
             entry['env-title'][7:],
             entry['score'],
             entry['algo-nickname'],
