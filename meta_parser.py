@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """Parse metdata from ArXiv.org."""
 import os
 import requests
@@ -68,7 +69,8 @@ def parse_arxiv(arxiv_tag):
 
 
 def main():
-    parse_arxiv('1509.06461')
+    arxiv_tag = input('Please input the arxiv tag (ex. 1509.06461): ')
+    parse_arxiv(arxiv_tag)
 
 
 if __name__ == '__main__':
