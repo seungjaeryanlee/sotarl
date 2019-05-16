@@ -1,6 +1,4 @@
-from .algo__acktr import entries as acktr_entries
-from .algo__a2c import entries as a2c_entries
-from .algo__trpo import entries as trpo_entries
+from .algo__ape_x_dqn import entries as ape_x_entries
 
 
 # Specify SOURCE
